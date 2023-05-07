@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Division</title>
+</head>
+<style>
+#parent{
+    height: 500px;
+    width: 675px;
+    background-color: rgb(12, 234, 241);
+    margin: auto;
+}
+.child1{
+    height: 20%;
+    width: 80%;
+    background-color: green;
+    margin: auto;
+}
+.child3{
+    background-color:  green;
+    
+    height: 20%;
+    width: 80%;
+    margin: auto;
+}
+.child2{
+  
+    height: 60%;
+    width: 50%;
+    background-color: orange;
+    margin: auto;
+    clip-path: circle();
+    position: relative;
+}
+.sub1{
+  
+  height: 40%;
+  width: 50%;
+  background-color: green;
+  margin: auto;
+  clip-path: circle();
+}
+.mini1{
+  
+  height: 40%;
+  width: 50%;
+  background-color: rgb(207, 147, 36);
+  margin: auto;
+clip-path: circle();
+}
+.micro1{
+  
+  height: 40%;
+  width: 50%;
+  background-color: rgb(52, 230, 82);
+  margin: auto;
+  clip-path: circle();
+  bottom: 0;
+}
+.sub2{
+  
+  height: 40%;
+  width: 50%;
+  background-color: green;
+  margin: auto;
+  clip-path: circle();
+  bottom: 0;
+  
+  
+}
+.mini2{
+  
+  height: 40%;
+  width: 50%;
+  background-color: rgb(207, 147, 36);
+  margin: auto;
+clip-path: circle();
+rotate: y 180deg;
+
+}
+.micro2{
+  
+  height: 40%;
+  width: 50%;
+  background-color: rgb(52, 230, 82);
+  margin: auto;
+  clip-path: circle();
+  rotate: y 180deg;
+
+}
+
+
+</style>
+<body>
+<div id="parent">
+    <div class="child1"></div>
+    <div class="child2">
+        <div class="sub1">
+            <div class="mini1">
+                <div class="micro1">   
+                </div>
+            </div> 
+        </div>
+        <div class="sub2">
+            <div class="mini2">
+                <div class="micro2">   
+                </div>
+            </div> 
+        </div>
+    </div>  
+    
+    <div class="child3">
+
+    </div>
+</div>
+</body>
+</html>
